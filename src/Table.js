@@ -28,6 +28,9 @@ const TableBody = props => {
 class Table extends Component {
     render() {
         const { characterData, removeCharacter } = this.props;
+
+        if(characterData.length === 0) return null;
+
         return (
             <table>
                 <TableHeader />

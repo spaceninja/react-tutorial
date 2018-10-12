@@ -21,7 +21,9 @@ class App extends Component {
     }
     render() {
         return (
-            <div className="container">
+            <div className="small-container">
+                <h1>React Tutorial App: People List</h1>
+                <p>Built following the instructions in <a href="https://www.taniarascia.com/getting-started-with-react/">Getting Started with React</a>, by Tania Rascia.</p>
                 <Table
                     characterData={this.state.characters}
                     removeCharacter={this.removeCharacter}

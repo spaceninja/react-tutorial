@@ -23,23 +23,26 @@ class Form extends Component {
         const {name, job} = this.state;
         return (
             <form>
-                <label for="name">Name</label>
-                <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    value={name}
-                    onChange={this.handleChange}
-                />
-                <label for="job">Job</label>
-                <input
-                    type="text"
-                    name="job"
-                    id="job"
-                    value={job}
-                    onChange={this.handleChange}
-                />
-                <button type="button" onClick={this.submitForm}>Submit</button>
+                <fieldset>
+                    <legend>Add a Person</legend>
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        value={name}
+                        onChange={this.handleChange}
+                    />
+                    <label for="job">Job</label>
+                    <input
+                        type="text"
+                        name="job"
+                        id="job"
+                        value={job}
+                        onChange={this.handleChange}
+                    />
+                    <button type="button" onClick={this.submitForm}>Submit</button>
+                </fieldset>
             </form>
         );
     }
